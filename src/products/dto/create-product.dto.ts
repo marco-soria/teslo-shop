@@ -39,4 +39,11 @@ gender: string;
 @IsOptional()
 tags: string[];
 
+
+@IsString({ each: true })
+@IsArray()
+@IsOptional()
+images?: string[];
+
+
 }
